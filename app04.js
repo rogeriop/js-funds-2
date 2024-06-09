@@ -3,6 +3,7 @@ Nome      : app04
 Finalidade: Curso de JavaScript: conhecendo arrays
 Observação: 04 Funções Callback
 Data      : 02/06/2024
+Edtitado no vi
 */
 
 const read = require('readline-sync');
