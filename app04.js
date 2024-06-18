@@ -4,11 +4,16 @@ Finalidade: Curso de JavaScript: conhecendo arrays
 Observação: 04 Funções Callback
 Data      : 02/06/2024
 Edtitado no vi
+Teste se atualização repositorio continua funcionando
 */
 
 const read = require('readline-sync');
 const color = require('@colors/colors');
 console.clear();
+function pare(){
+  let espere = read.question("Pressione a tecla <enter> para continuar...");
+  console.clear();
+}
 
 console.log(
     "1- Utilize o método forEach para imprimir cada elemento de um array juntamente com seu índice.".cyan
