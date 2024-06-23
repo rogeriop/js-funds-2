@@ -25,6 +25,7 @@ function imprimeElemento(elemento, index) {
     console.log(`${elemento} ${index}`);
 }
 arrayExemplo.forEach((elemento, indice) => console.log(`${elemento} ${indice}`.yellow));
+pare();
 
 console.log(
     "2- Crie uma função chamada executaOperacaoEmArray que recebe dois parâmetros: um array e uma função de callback que executa alguma operação matemática. Essa função deve iterar por cada elemento do array e aplicar a função de callback em cada um dos elementos, imprimindo o resultado da operação no console.".cyan
@@ -37,8 +38,10 @@ function matematica(elemento) {
   console.log(elemento += 10);
 }
 const lista2 = [100, 200, 300, 400, 500, 600];
+console.log(`Lista original = ${lista2}`);
+console.log(`A função irá somar 10 a cada elemento da lista original`)
 console.log(executaOperacaoEmArray(lista2, matematica));
-
+pare();
 
 
 console.log(
@@ -51,8 +54,9 @@ function verificaExistenciaNumero(numero3) {
   return lista3.findIndex((valor) => valor == numero3)
 }
 let numero3 = Number(read.question("Informe o numero ")).toFixed(0);
-console.log(verificaExistenciaNumero(numero3));
+console.log(`A posição deste número no Array é ${verificaExistenciaNumero(numero3)}`);
 console.log("");
+pare();
 
 console.log(
   "4- Você recebeu dois arrays de nomes contendo os alunos da Turma A e da Turma B.".cyan
@@ -86,6 +90,7 @@ return resultado;
 
 const nomeRecebido = read.question("Informe nome do aluno: ").yellow;
 console.log(`Resultado da Pesquisa: ${buscaAluno(nomeRecebido)}`)
+pare();
 
 console.log(
   "5- Considere um array de números inteiros.".cyan
@@ -97,4 +102,5 @@ console.log("Utilize o método forEach() para multiplicar cada elemento do array
 );
 numeros.forEach((elemento) => console.log(elemento * 3));
 console.log(`o índice do número 18 no array original ${numeros.findIndex((elemento) => elemento === 18)}`);
-
+pare();
+console.log("End-of-Job".green)
